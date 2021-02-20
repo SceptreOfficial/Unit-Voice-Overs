@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://github.com/SceptreOfficial/Unit-Voice-Overs/raw/master/assets/uvo_black.png" width="128">
+	<img src="https://github.com/SceptreOfficial/Unit-Voice-Overs/raw/main/assets/uvo_black.png" width="128">
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 	<a href="https://github.com/SceptreOfficial/Unit-Voice-Overs/issues">
 		<img src="https://img.shields.io/github/issues-raw/SceptreOfficial/Unit-Voice-Overs?style=flat-square&label=Issues" alt="Issues">
 	</a>
-	<a href="https://github.com/SceptreOfficial/Unit-Voice-Overs/blob/master/LICENSE">
+	<a href="https://github.com/SceptreOfficial/Unit-Voice-Overs/blob/main/LICENSE">
 		<img src="https://img.shields.io/badge/License-GPLv2-red?style=flat-square" alt="License">
 	</a>
 </p>
