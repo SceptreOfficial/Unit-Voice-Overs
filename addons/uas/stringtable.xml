@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="UVO">
+	<Package name="UAS">
+		<Key ID="STR_UVO_UAS_UnitAmbientSFX">
+			<English>Unit Ambient SFX</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingCategory_Core">
+			<English>Core</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingCategory_Radio">
+			<English>Radio</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingCategory_Coughing">
+			<English>Coughing</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingCategory_Sighing">
+			<English>Sighing</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingCategory_Whistling">
+			<English>Whistling</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_EnablePlayers">
+			<English>Enable for players</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_EnablePlayers">
+			<English>Enable UAS for player controlled units</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_EnableRadio">
+			<English>Enable radio sounds</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_EnableRadio">
+			<English>Enables ambient radio sounds for all groups</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_EnableRadioPlayers">
+			<English>Enable radio for players</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_EnableRadioPlayers">
+			<English>Plays radio sounds on player regardless of core setting</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_MinIntRadio">
+			<English>Radio min interval</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_MinIntRadio">
+			<English>Mininum interval time in seconds</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_IntMultiplierRadio">
+			<English>Radio interval multiplier</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_IntMultiplierRadio">
+			<English>minInt + random (minInt * multiplier)</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_ChanceRadio">
+			<English>Radio chance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_ChanceRadio">
+			<English>Chance sound will play after random interval has elapsed</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_RadioOperator">
+			<English>Radio operator</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_RadioOperator">
+			<English>Specify unit(s) radio sounds will play on</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_Setting_RadioOperator_0">
+			<English>Leader</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_Setting_RadioOperator_1">
+			<English>Random</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_Setting_RadioOperator_2">
+			<English>Units with "UAS_radioOperator" variable</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_DistanceRadio">
+			<English>Radio hearing distance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_DistanceRadio">
+			<English>Sound fade-out distance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_DistanceRadioInVehicle">
+			<English>Radio hearing distance in vehicle</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_DistanceRadioInVehicle">
+			<English>Sound fade-out distance when inside a vehicle</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_EnableCoughing">
+			<English>Enable coughing</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_EnableCoughing">
+			<English>Enables cough sounds (more common from wounded units)</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_MinIntCough">
+			<English>Cough min interval</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_MinIntCough">
+			<English>Mininum random interval time in seconds</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_IntMultiplierCough">
+			<English>Cough interval multiplier</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_IntMultiplierCough">
+			<English>minInt + random (minInt * multiplier)</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_ChanceCough">
+			<English>Cough chance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_ChanceCough">
+			<English>Chance sound will play after random interval has elapsed (chance increases with damage)</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_DistanceCough">
+			<English>Cough hearing distance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_DistanceCough">
+			<English>Sound fade-out distance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_EnableSighing">
+			<English>Enable sighing</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_EnableSighing">
+			<English>Enables ambient sighs/breathing sfx</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_MinIntSigh">
+			<English>Sigh min interval</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_MinIntSigh">
+			<English>Mininum random interval time in seconds</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_IntMultiplierSigh">
+			<English>Sigh interval multiplier</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_IntMultiplierSigh">
+			<English>minInt + random (minInt * multiplier)</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_ChanceSigh">
+			<English>Sigh chance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_ChanceSigh">
+			<English>Chance sound will play after random interval has elapsed</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_DistanceSigh">
+			<English>Sigh hearing distance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_DistanceSigh">
+			<English>Sound fade-out distance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_EnableWhistling">
+			<English>Enable whistling</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_EnableWhistling">
+			<English>Enables ambient whistles (won't trigger if unit is in combat or damaged)</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_MinIntWhistle">
+			<English>Whistle min interval</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_MinIntWhistle">
+			<English>Mininum random interval time in seconds</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_IntMultiplierWhistle">
+			<English>Whistle interval multiplier</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_IntMultiplierWhistle">
+			<English>minInt + random (minInt * multiplier)</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_ChanceWhistle">
+			<English>Whistle chance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_ChanceWhistle">
+			<English>Chance sound will play after random interval has elapsed</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingName_DistanceWhistle">
+			<English>Whistle hearing distance</English>
+		</Key>
+		<Key ID="STR_UVO_UAS_SettingInfo_DistanceWhistle">
+			<English>Sound fade-out distance</English>
+		</Key>
+	</Package>
+</Project>

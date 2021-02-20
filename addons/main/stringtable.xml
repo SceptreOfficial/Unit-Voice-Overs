@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="UVO">
+	<Package name="Main">
+		<Key ID="STR_UVO_Main_UnitVoiceOvers">
+			<English>Unit Voice-overs</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingCategory_Core">
+			<English>Core</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingCategory_Compatibility">
+			<English>Compatibility</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingCategory_Debug">
+			<English>Debug</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingCategory_Initialization">
+			<English>Initialization</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_EnablePlayers">
+			<English>Enable for players</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_EnablePlayers">
+			<English>Enable voice-overs for player controlled units</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_KillConfirmChanceAI">
+			<English>AI kill confirm chance</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_KillConfirmChanceAI">
+			<English>Chance AI will give confirmation when an enemy is killed and visible</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_KillConfirmChancePlayer">
+			<English>Player kill confirm chance</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_KillConfirmChancePlayer">
+			<English>Chance players will give confirmation when an enemy is killed and visible</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_HearingDistance">
+			<English>Max hearing distance</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_HearingDistance">
+			<English>Sound fade-out distance</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_VoicePitch">
+			<English>Voice sample pitch</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_VoicePitch">
+			<English>Pitch of sound samples</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_DeathShoutVolume">
+			<English>Death shout volume</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_DeathShoutVolume">
+			<English>How loud death shouts are when a unit is killed</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_DeathShoutDistance">
+			<English>Death shout max hearing distance</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_DeathShoutDistance">
+			<English>Sound fade-out distance</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_CompatFrag">
+			<English>Frag compatibility</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_CompatFrag">
+			<English>Add magazine classes for correct phrases to be said</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_CompatSmoke">
+			<English>Smoke compatibility</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_CompatSmoke">
+			<English>Add magazine classes for correct phrases to be said</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_CompatFlash">
+			<English>Flash compatibility</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_CompatFlash">
+			<English>Add magazine classes for correct phrases to be said</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_CompatIncendiary">
+			<English>Incendiary compatibility</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_CompatIncendiary">
+			<English>Add magazine classes for correct phrases to be said</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_CompatExplosive">
+			<English>Explosive compatibility</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_CompatExplosive">
+			<English>Add magazine classes for correct phrases to be said</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_Debug">
+			<English>Debug mode</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_Debug">
+			<English>Enables extra debug info</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_SentencesEast">
+			<English>EAST - Default chatter</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_SentencesEast">
+			<English>Allows default Arma voices for EAST based units</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_UVOEast">
+			<English>EAST - Enable UVO</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_UVOEast">
+			<English>Enables unit voice-overs for EAST based units</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_SentencesGuer">
+			<English>GUER - Default chatter</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_SentencesGuer">
+			<English>Allows default Arma voices for GUER based units</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_UVOGuer">
+			<English>GUER - Enable UVO</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_UVOGuer">
+			<English>Enables unit voice-overs for GUER based units</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_SentencesWest">
+			<English>WEST - Default chatter</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_SentencesWest">
+			<English>Allows default Arma voices for WEST based units</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_UVOWest">
+			<English>WEST - Enable UVO</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_UVOWest">
+			<English>Enables unit voice-overs for WEST based units</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_SentencesCustom">
+			<English>%1 - Default chatter</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_SentencesCustom">
+			<English>Allows default Arma voices for units with: %1</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingName_UVOCustom">
+			<English>%1 - Enable UVO</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_UVOCustom">
+			<English>Enables unit voice-overs for units with: %1</English>
+		</Key>
+		<Key ID="STR_UVO_Main_Keybind_Callout">
+			<English>Directional enemy callout</English>
+		</Key>
+	</Package>
+</Project>
