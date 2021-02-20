@@ -33,4 +33,4 @@ Using NWI's Insurgency sound samples, this mod was created to improve the overal
 
 ### License
 
-This project is licensed under the MIT License ([GPLv2](../master/LICENSE)).
+This project is licensed under the MIT License ([MIT](../master/LICENSE)).
