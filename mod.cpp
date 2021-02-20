@@ -1,0 +1,13 @@
+name = "Unit Voice-overs";
+dir = "@uvo";
+author = "Simplex Team";
+description = "Unit Voice-overs";
+overview = "Unit Voice-overs";
+picture = "uvo.paa";
+overviewPicture = "uvo.paa";
+logo = "uvo.paa";
+logoOver = "uvo.paa";
+actionName = "Website";
+action = "uvo.paa";
+tooltip = "Unit Voice-overs";
+tooltipOwned = "Unit Voice-overs Owned";
