@@ -15,7 +15,7 @@
 		<img src="https://img.shields.io/github/issues-raw/SceptreOfficial/Unit-Voice-Overs?style=flat-square&label=Issues" alt="Issues">
 	</a>
 	<a href="https://github.com/SceptreOfficial/Unit-Voice-Overs/blob/main/LICENSE">
-		<img src="https://img.shields.io/badge/License-GPLv2-red?style=flat-square" alt="License">
+		<img src="https://img.shields.io/badge/License-MIT-red?style=flat-square" alt="License">
 	</a>
 </p>
 
