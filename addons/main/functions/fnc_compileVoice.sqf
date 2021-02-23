@@ -6,10 +6,10 @@ private _namespace = call CBA_fnc_createNamespace;
 missionNamespace setVariable ["UVO_voice_" + _name,_namespace];
 
 private _events = if (isClass (_config >> "events")) then {
-	_config >> "_events"
+	_config >> "events"
 } else {
 	// Backwards compatibility
-	_config >> "_definitions"
+	_config >> "definitions"
 };
 
 {_namespace setVariable [_x,getArray (_events >> _x)]} forEach [
