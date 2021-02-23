@@ -18,3 +18,5 @@
 	sound[] = {QPATHTOF(PATH),0.6,1,100}; \
 	titles[] = {}; \
 }
+
+#define GET_SOUND(UNIT,TYPE) selectRandom ((missionNamespace getVariable ["UAS_soundset_" + (UNIT getVariable "UAS_soundset"),objNull]) getVariable [TYPE,[]])

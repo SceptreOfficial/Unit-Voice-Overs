@@ -9,7 +9,7 @@ if (GVAR(enableCoughing) && _unit getVariable [QGVAR(intCough),CBA_missionTime +
 	if (EXIT_CONDITION) exitWith {};
 
 	if (random 1 < GVAR(chanceCough) * (damage _unit + 0.8)) then {
-		[QGVAR(say3D),[_unit,[selectRandom GVAR(coughs),GVAR(distanceCough)]]] call CBA_fnc_globalEvent;
+		[QGVAR(say3D),[_unit,[GET_SOUND(_unit,"cough"),GVAR(distanceCough)]]] call CBA_fnc_globalEvent;
 	};
 };
 
@@ -19,7 +19,7 @@ if (GVAR(enableSighing) && _unit getVariable [QGVAR(intSigh),CBA_missionTime + 1
 	if (EXIT_CONDITION) exitWith {};
 
 	if (random 1 < GVAR(chanceSigh)) then {
-		[QGVAR(say3D),[_unit,[selectRandom GVAR(sighs),GVAR(distanceSigh)]]] call CBA_fnc_globalEvent;
+		[QGVAR(say3D),[_unit,[GET_SOUND(_unit,"sigh"),GVAR(distanceSigh)]]] call CBA_fnc_globalEvent;
 	};
 };
 
@@ -31,6 +31,6 @@ if (GVAR(enableWhistling) && _unit getVariable [QGVAR(intWhistle),CBA_missionTim
 	if (behaviour _unit == "COMBAT" || damage _unit > 0.1) exitWith {};
 	
 	if (random 1 < GVAR(chanceWhistle)) then {
-		[QGVAR(say3D),[_unit,[selectRandom GVAR(whistles),GVAR(distanceWhistle)]]] call CBA_fnc_globalEvent;
+		[QGVAR(say3D),[_unit,[GET_SOUND(_unit,"whistle"),GVAR(distanceWhistle)]]] call CBA_fnc_globalEvent;
 	};
 };

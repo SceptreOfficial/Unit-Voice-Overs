@@ -22,7 +22,7 @@ if (GVAR(enableRadio) && _group getVariable [QGVAR(intRadio),CBA_missionTime + 1
 				private _leader = leader _group;
 
 				if (isPlayer _leader && GVAR(enableRadioPlayers) && alive _leader && behaviour _leader != "STEALTH") then {
-					[_leader,selectRandom GVAR(radioSounds)] call _fnc_playRadio;
+					[_leader,GET_SOUND(_leader,"radio")] call _fnc_playRadio;
 				};
 			};
 			// Random unit
@@ -35,7 +35,9 @@ if (GVAR(enableRadio) && _group getVariable [QGVAR(intRadio),CBA_missionTime + 1
 
 				if (_units isEqualTo []) exitWith {};
 
-				[selectRandom _units,selectRandom GVAR(radioSounds)] call _fnc_playRadio;
+				private _unit = selectRandom _units;
+
+				[_unit,GET_SOUND(_unit,"radio")] call _fnc_playRadio;
 			};
 			// Units with 'UAS_radioOperator' variable
 			case 2 : {
@@ -49,7 +51,7 @@ if (GVAR(enableRadio) && _group getVariable [QGVAR(intRadio),CBA_missionTime + 1
 
 				private _sound = selectRandom GVAR(radioSounds);
 
-				{[_x,_sound] call _fnc_playRadio} forEach _units;
+				{[_x,GET_SOUND(_x,"radio")] call _fnc_playRadio} forEach _units;
 			};
 		};
 	};
