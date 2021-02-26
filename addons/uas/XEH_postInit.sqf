@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-systemChat str GVAR(soundsets);
-
 {
 	_x params ["_name","_config"];
 
