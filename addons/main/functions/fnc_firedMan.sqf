@@ -16,11 +16,11 @@ if (_weapon isKindOf ["LauncherCore",configFile >> "CfgWeapons"]) then {
 if (isPlayer _unit && !GVAR(enablePlayers)) exitWith {};
 
 if (_weapon in ["Put","Throw"]) then {
-	private _type = ["","frag","smoke","flash","incendiary","charge"] # ([GVAR(throwablesHash),toLower _magazine] call CBA_fnc_hashGet);
+	private _type = GVAR(throwablesHash) getOrDefault [toLower _magazine,0];
 	
-	if (_type isEqualTo "") exitWith {};
+	if (_type isEqualTo 0) exitWith {};
 
-	if (_type isEqualTo "frag") then {
+	if (_type isEqualTo 1) then {
 		[FUNC(thrownFrag),[_projectile,side group _unit],0.5] call CBA_fnc_waitAndExecute;
 	};
 
@@ -28,7 +28,7 @@ if (_weapon in ["Put","Throw"]) then {
 	if (_friendlies isEqualTo []) exitWith {};
 
 	// Give appropriate warning
-	[_unit,_type] call FUNC(speak);
+	[_unit,["","frag","smoke","flash","incendiary","charge"] # _type] call FUNC(speak);
 } else {
 	if (isPlayer _unit) exitWith {};
 

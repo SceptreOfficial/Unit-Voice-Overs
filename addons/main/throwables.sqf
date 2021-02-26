@@ -1,4 +1,4 @@
-GVAR(throwablesHash) = [[
+GVAR(throwablesHash) = createHashMapFromArray [
 	// 1: frag
 	["handgrenade",1],
 	["minigrenade",1],
@@ -68,4 +68,4 @@ GVAR(throwablesHash) = [[
 	["iedlandbig_remote_mag",5],
 	["iedurbansmall_remote_mag",5],
 	["iedlandsmall_remote_mag",5]
-],0] call CBA_fnc_hashCreate;
+];

@@ -17,5 +17,5 @@ if (_throwables # 0 isEqualType "") then {
 
 {
 	_x params [["_class","",[""]],["_type",0,[0]]];
-	[GVAR(throwablesHash),[toLower _class,_type]] call CBA_fnc_hashSet;
+	GVAR(throwablesHash) set [toLower _class,_type];
 } forEach _throwables;
