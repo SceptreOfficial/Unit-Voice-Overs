@@ -56,10 +56,11 @@ if (_config isEqualType "" && _factions isEqualType []) then {
 	};
 
 	{
-		private _index = GVAR(customVoices) findIf {_x # 0 == _x};
+		private _faction = _x;
+		private _index = GVAR(customVoices) findIf {_x # 0 == _faction};
 
 		if (_index isEqualTo -1) then {
-			GVAR(customVoices) pushBack [_x,[_config]];
+			GVAR(customVoices) pushBack [_faction,[_config]];
 		} else {
 			(GVAR(customVoices) # _index # 1) pushBack _config;
 		};
