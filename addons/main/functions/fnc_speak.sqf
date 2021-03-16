@@ -1,7 +1,8 @@
 #include "script_component.hpp"
 
 if (GVAR(debug)) then {diag_log str _this};
-params [["_unit",objNull,[objNull]],["_event","",[""]]];
+
+params [["_unit",objNull,[objNull]],["_event","",[""]],["_hearingDistance",GVAR(hearingDistance),[0]]];
 
 if (!alive _unit || _unit getVariable ["ACE_isUnconscious",false] || behaviour _unit == "STEALTH") exitWith {};
 
@@ -13,7 +14,7 @@ private _sound = selectRandom ((missionNamespace getVariable ["UVO_voice_" + (_u
 
 if (_event != "death") then {
 	// Speak
-	[QGVAR(speak),[_unit,_sound]] call CBA_fnc_globalEvent;
+	[QGVAR(speak),[_unit,_sound,_hearingDistance]] call CBA_fnc_globalEvent;
 
 	// Let the unit be able to speak again
 	[{_this setVariable ["UVO_speaking",false]},_unit,1.5] call CBA_fnc_waitAndExecute;

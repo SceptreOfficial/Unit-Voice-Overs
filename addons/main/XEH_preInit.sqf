@@ -40,11 +40,11 @@ GVAR(aceMedical) = isClass (configFile >> "CfgPatches" >> "ace_medical");
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(speak),{
-	params [["_unit",objNull],["_sound",""]];
+	params [["_unit",objNull],["_sound",""],["_hearingDistance",300,[0]]];
 	
 	if (isNull _unit || _sound isEqualTo "") exitWith {};
 
-	_unit say3D [_sound,GVAR(hearingDistance),GVAR(voicePitch),false];
+	_unit say3D [_sound,_hearingDistance,GVAR(voicePitch),false];
 	_unit setRandomLip true;
 	[{_this setRandomLip false},_unit,1.5] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
