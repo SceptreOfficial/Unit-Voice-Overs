@@ -21,6 +21,13 @@ GVAR(aceMedical) = isClass (configFile >> "CfgPatches" >> "ace_medical");
 ["CAManBase","hit",FUNC(hit)] call CBA_fnc_addClassEventHandler;
 ["CAManBase","killed",FUNC(killed)] call CBA_fnc_addClassEventHandler;
 ["CAManBase","reloaded",FUNC(reloaded)] call CBA_fnc_addClassEventHandler;
+["CAManBase","suppressed",{
+	params ["_unit"];
+
+	if (local _unit) then {
+		[QGVAR(suppressed),[_this # 0,"bulletSuppression"]] call CBA_fnc_localEvent;
+	};
+}] call CBA_fnc_addClassEventHandler;
 
 [QGVAR(setSpeaker),{
 	params ["_unit","_voice"];

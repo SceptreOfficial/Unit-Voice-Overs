@@ -3,7 +3,6 @@
 // Compile voices
 {_x call FUNC(compileVoice)} forEach GVAR(voices);
 
-
 if (hasInterface) then {
 	// Player reload
 	[{

@@ -4,13 +4,9 @@ params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_
 
 if (!local _unit) exitWith {};
 
-// Suppression feature
+// RPG suppression feature
 if (_weapon isKindOf ["LauncherCore",configFile >> "CfgWeapons"]) then {
-	GVAR(projectiles) pushBack [_projectile,true,0];
-} else {
-	if (_unit getVariable ["UVO_fireBuffer",0] > CBA_missionTime) exitWith {};
-	_unit setVariable ["UVO_fireBuffer",CBA_missionTime + 2 + random 2];
-	GVAR(projectiles) pushBack [_projectile,false,CBA_missionTime + 0.03];
+	GVAR(projectiles) pushBack [_projectile,0];
 };
 
 if (isPlayer _unit && !GVAR(enablePlayers)) exitWith {};
