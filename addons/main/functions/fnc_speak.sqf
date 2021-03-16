@@ -10,7 +10,9 @@ if (!alive _unit || _unit getVariable ["ACE_isUnconscious",false] || behaviour _
 if (_unit getVariable ["UVO_speaking",false] || {isPlayer _unit && inputAction "pushToTalk" > 0}) exitWith {};
 _unit setVariable ["UVO_speaking",true];
 
-private _sound = selectRandom ((missionNamespace getVariable ["UVO_voice_" + (_unit getVariable "UVO_voice"),objNull]) getVariable [_event,[]]);
+private _sound = selectRandom ((missionNamespace getVariable ["UVO_voice_" + (_unit getVariable "UVO_voice"),objNull]) getVariable [_event,[""]]);
+
+if (_sound isEqualTo "") exitWith {};
 
 if (_event != "death") then {
 	// Speak

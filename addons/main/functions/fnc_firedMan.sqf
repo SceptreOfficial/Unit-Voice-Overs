@@ -2,7 +2,7 @@
 
 params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];
 
-if (!local _unit) exitWith {};
+if (!local _unit || _unit getVariable ["UVO_voice",""] isEqualTo "") exitWith {};
 
 // RPG suppression feature
 if (_weapon isKindOf ["LauncherCore",configFile >> "CfgWeapons"]) then {
