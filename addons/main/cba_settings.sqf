@@ -32,6 +32,16 @@
 ] call CBA_fnc_addSetting;
 
 [
+	QGVAR(killConfirmStealth),"CHECKBOX",
+	[LSTRING(SettingName_KillConfirmStealth),LSTRING(SettingInfo_KillConfirmStealth)],
+	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Core)],
+	false,
+	true,
+	{},
+	false
+] call CBA_fnc_addSetting;
+
+[
 	QGVAR(hearingDistance),"SLIDER",
 	[LSTRING(SettingName_HearingDistance),LSTRING(SettingInfo_HearingDistance)],
 	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Core)],

@@ -34,6 +34,12 @@
 		<Key ID="STR_UVO_Main_SettingInfo_KillConfirmChancePlayer">
 			<English>Chance players will give confirmation when an enemy is killed and visible</English>
 		</Key>
+		<Key ID="STR_UVO_Main_SettingName_KillConfirmStealth">
+			<English>Stealth kill confirmations</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_KillConfirmStealth">
+			<English>Allows verbal kill confirmations from units in stealth behavior</English>
+		</Key>
 		<Key ID="STR_UVO_Main_SettingName_HearingDistance">
 			<English>Max hearing distance</English>
 		</Key>
