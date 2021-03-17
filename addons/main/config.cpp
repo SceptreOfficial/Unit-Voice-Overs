@@ -19,6 +19,17 @@ class CfgPatches {
 		};
 		VERSION_CONFIG;
 	};
+
+	// Dependency fix
+	class UVO {
+		name = COMPONENT;
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = REQUIRED_VERSION;
+		requiredAddons[] = {"A3_data_f"};
+		author = "Simplex Team";
+		VERSION_CONFIG;
+	};
 };
 
 #include "CfgEventHandlers.hpp"

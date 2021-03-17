@@ -11,6 +11,17 @@ class CfgPatches {
 		url = "";
 		VERSION_CONFIG;
 	};
+
+	// Dependency fix
+	class UAS {
+		name = COMPONENT;
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = REQUIRED_VERSION;
+		requiredAddons[] = {"A3_data_f"};
+		author = "Simplex Team";
+		VERSION_CONFIG;
+	};
 };
 
 #include "CfgEventHandlers.hpp"
