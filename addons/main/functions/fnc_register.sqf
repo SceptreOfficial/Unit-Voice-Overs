@@ -36,7 +36,7 @@ if (_config isEqualType configNull) exitWith {
 	] call CBA_fnc_addSetting;
 	[
 		QGVAR(UVO) + _name,"CHECKBOX",
-		[LSTRING(SettingName_UVOCustom),LSTRING(SettingInfo_UVOCustom)],
+		[format [LSTRING(SettingName_UVOCustom),_name],format [LSTRING(SettingInfo_UVOCustom),_name]],
 		[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Initialization)],
 		true,
 		true,
