@@ -45,7 +45,7 @@ if (_death isEqualTo []) then {
 };
 
 private _cfgSounds = configFile >> "CfgSounds";
-_death = _death apply {(getArray (_cfgSounds >> _x >> "sound")) # 0};
+_namespace setVariable ["death",_death apply {(getArray (_cfgSounds >> _x >> "sound")) # 0}];
 
 if (_custom) then {
 	if (isNil QGVAR(customVoices)) then {
