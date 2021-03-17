@@ -3,6 +3,10 @@
 *.pbo
 *.biprivatekey
 *.bat
+*.exe
 releases/
 Thumbs.db
 desktop.ini
+releases/*
+keys/*
+.hemtt/local
