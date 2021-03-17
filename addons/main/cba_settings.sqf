@@ -65,7 +65,7 @@
 	QGVAR(deathShoutVolume),"SLIDER",
 	[LSTRING(SettingName_DeathShoutVolume),LSTRING(SettingInfo_DeathShoutVolume)],
 	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Core)],
-	[0,20,3,1],
+	[0,5,3,1],
 	true,
 	{},
 	false
