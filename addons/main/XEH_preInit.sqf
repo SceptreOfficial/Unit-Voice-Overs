@@ -54,9 +54,9 @@ GVAR(aceMedical) = isClass (configFile >> "CfgPatches" >> "ace_medical");
 	
 	if (isPlayer _unit && !GVAR(enablePlayers)) exitWith {};
 
-	if (CBA_missionTime < _unit getVariable "UVO_suppressBuffer" || (_event isEqualTo "bulletSuppression" && random 1 < 0.2)) exitWith {};
-	_unit setVariable ["UVO_suppressBuffer",CBA_missionTime + 10 + round random 10];
+	if (CBA_missionTime < _unit getVariable ["UVO_suppressBuffer",0] || (_event isEqualTo "bulletSuppression" && random 1 < 0.2)) exitWith {};
 
+	_unit setVariable ["UVO_suppressBuffer",CBA_missionTime + 15 + round random 15];
 	[_unit,_event] call FUNC(speak);
 }] call CBA_fnc_addEventHandler;
 

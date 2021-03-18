@@ -18,3 +18,9 @@
 	sound[] = {QPATHTOF(PATH),2.9,1,100}; \
 	titles[] = {}; \
 }
+
+#define SOUND_CLASS_COMMON(NAME,PATH) class NAME { \
+	name = QUOTE(NAME); \
+	sound[] = {QUOTE(MAINPREFIX\PREFIX\SUBPREFIX\COMPONENT\PATH),2.9,1,100}; \
+	titles[] = {}; \
+}

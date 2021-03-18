@@ -36,7 +36,7 @@ if (_visibility isEqualTo 0) then {
 	_visibility = [_instigator,"VIEW",_unit] checkVisibility [eyePos _instigator,_unit modelToWorldVisualWorld (_unit selectionPosition "Head")];
 };
 
-if (_visibility < 0.03) exitWith{};
+if (_visibility < 0.03) exitWith {};
 
 [QGVAR(confirmKill),[_instigator,_unit],_instigator] call CBA_fnc_targetEvent;
 

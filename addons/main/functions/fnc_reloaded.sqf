@@ -23,10 +23,7 @@ private _friendlies = ((_unit nearEntities [["CAManBase"],40]) select {
 
 if (_friendlies isEqualTo []) exitWith {};
 
-// If primary weapon, say ammo low. If it's a launcher, have a friendly say he's covering.
 if (currentweapon _unit != secondaryweapon _unit) then {
 	if (isPlayer _unit && !GVAR(enablePlayers)) exitWith {};
 	[_unit,"ammoLow"] call FUNC(speak);
-} else {
-	[selectRandom _friendlies,"cover"] call FUNC(speak);
 };

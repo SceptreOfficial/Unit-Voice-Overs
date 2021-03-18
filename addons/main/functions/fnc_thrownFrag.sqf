@@ -20,5 +20,5 @@
 	_enemies = _enemies apply {[_x distance _projectile, _x]};
 	_enemies sort true;
 
-	[_enemies # (_i - 1) # 1,"spotNade"] call FUNC(speak);
+	[_enemies # 0 # 1,"spotNade"] call FUNC(speak);
 },_this,12,{}] call CBA_fnc_waitUntilAndExecute;

@@ -24,7 +24,7 @@ if (currentWeapon _unit == secondaryWeapon _unit) exitWith {};
 // Determine callout direction
 private _dir = getDir _unit;
 private _event = switch true do {
-	case (_dir < 17) : {"calloutsN"};
+	case (_dir < 17 || _dir >= 343) : {"calloutsN"};
 	case (_dir < 73) : {"calloutsNE"};
 	case (_dir < 107) : {"calloutsE"};
 	case (_dir < 163) : {"calloutsSE"};

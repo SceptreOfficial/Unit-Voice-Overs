@@ -5,8 +5,16 @@
 
 if (hasInterface) then {
 	// Player reload
+	GVAR(reloadAllow) = true;
+	GVAR(reloadBuffer) = 0;
+
 	[{
 		if (inputAction "reloadMagazine" > 0) then {
+			// Prevent spam if holding the key down
+			if (!GVAR(reloadAllow) || GVAR(reloadBuffer) > CBA_missionTime) exitWith {};
+			GVAR(reloadAllow) = false;
+			GVAR(reloadBuffer) = CBA_missionTime + 2;
+
 			private _unit = call CBA_fnc_currentUnit;
 
 			if (
@@ -18,6 +26,12 @@ if (hasInterface) then {
 			if (_friendlies isEqualTo []) exitWith {};
 
 			[_unit,"reloading"] call FUNC(speak);
+			
+			if (random 1 < 0.3) then {
+				[FUNC(speak),[selectRandom _friendlies,"cover"],2 + random 4] call CBA_fnc_waitAndExecute;
+			};
+		} else {
+			GVAR(reloadAllow) = true;
 		};
 	},0] call CBA_fnc_addPerFrameHandler;
 
