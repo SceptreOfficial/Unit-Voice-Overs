@@ -9,6 +9,8 @@ if (hasInterface) then {
 	GVAR(reloadBuffer) = 0;
 
 	[{
+		if (!GVAR(enablePlayers)) exitWith {};
+		
 		if (inputAction "reloadMagazine" > 0) then {
 			// Prevent spam if holding the key down
 			if (!GVAR(reloadAllow) || GVAR(reloadBuffer) > CBA_missionTime) exitWith {};
@@ -33,16 +35,16 @@ if (hasInterface) then {
 		} else {
 			GVAR(reloadAllow) = true;
 		};
-	},0] call CBA_fnc_addPerFrameHandler;
+	}, 0] call CBA_fnc_addPerFrameHandler;
 
 	// Callout keybind
-	[LSTRING(UnitVoiceOvers),"UVO_callout",LSTRING(Keybind_Callout),{
+	[LSTRING(UnitVoiceOvers), "UVO_callout", LSTRING(Keybind_Callout), {
 		[call CBA_fnc_currentUnit] call FUNC(calloutDir);
 		false
-	},{false},[20,[false,false,false]],false] call CBA_fnc_addKeybind;
+	}, {false}, [20, [false, false, false]], false] call CBA_fnc_addKeybind;
 };
 
 // Suppression feature
 GVAR(projectiles) = [];
 GVAR(projectileIndex) = 0;
-GVAR(suppressionEFID) = addMissionEventHandler ["EachFrame",{call FUNC(suppressionLoop)}];
+GVAR(suppressionEFID) = addMissionEventHandler ["EachFrame", {call FUNC(suppressionLoop)}];
