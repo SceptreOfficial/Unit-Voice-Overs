@@ -1,12 +1,12 @@
 #include "script_component.hpp"
 
-if (GVAR(debug)) then {diag_log str _this};
+if (GVAR(debug)) then {diag_log format ["uvo_main_fnc_speak: %1",_this]};
 
 params [["_unit",objNull,[objNull]],["_event","",[""]],["_hearingDistance",GVAR(hearingDistance),[0]]];
 
 if (_event != "death" && (!alive _unit || _unit getVariable ["ACE_isUnconscious",false] || behaviour _unit == "STEALTH")) exitWith {};
 
-if (_unit getVariable ["UVO_speaking",false] || {isPlayer _unit && inputAction "pushToTalk" > 0}) exitWith {};
+if (_unit getVariable ["UVO_speaking",false] || {isPlayer _unit && !GVAR(enablePlayers) || inputAction "pushToTalk" > 0}) exitWith {};
 
 private _sound = selectRandom ((missionNamespace getVariable ["UVO_voice_" + (_unit getVariable "UVO_voice"),objNull]) getVariable [_event,[""]]);
 
