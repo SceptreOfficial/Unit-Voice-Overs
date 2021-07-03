@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];
+params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile"];
 
 if (!local _unit || _unit getVariable ["UVO_voice",""] isEqualTo "") exitWith {};
 
@@ -13,7 +13,7 @@ if (isPlayer _unit && !GVAR(enablePlayers)) exitWith {};
 
 if (_weapon in ["Put","Throw"]) then {
 	private _type = GVAR(throwablesHash) getOrDefault [toLower _magazine,0];
-	
+
 	if (_type isEqualTo 0) exitWith {};
 
 	if (_type isEqualTo 1) then {
@@ -24,7 +24,7 @@ if (_weapon in ["Put","Throw"]) then {
 	if (_friendlies isEqualTo []) exitWith {};
 
 	// Give appropriate warning
-	[_unit,["","frag","smoke","flash","incendiary","charge"] # _type] call FUNC(speak);
+	[_unit,["","frag","smoke","flash","incendiary","explosive"] # _type] call FUNC(speak);
 } else {
 	if (isPlayer _unit) exitWith {};
 
