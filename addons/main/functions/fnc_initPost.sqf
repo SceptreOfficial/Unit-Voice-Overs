@@ -21,7 +21,9 @@ if (!isNil QGVAR(customVoices)) then {
 };
 
 // Add UVO
-[_unit,_voice] call FUNC(add);
+if (missionNamespace getVariable [QGVAR(UVO) + _voice,true]) then {
+	[_unit,_voice] call FUNC(add);
+};
 
 // Default arma voices
 _unit setVariable ["UVO_speaker",speaker _unit,true];
