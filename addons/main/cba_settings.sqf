@@ -12,6 +12,16 @@
 ] call CBA_fnc_addSetting;
 
 [
+	QGVAR(enableCallouts),"CHECKBOX",
+	[LSTRING(SettingName_EnableCallouts),LSTRING(SettingInfo_EnableCallouts)],
+	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Core)],
+	true,
+	true,
+	{},
+	false
+] call CBA_fnc_addSetting;
+
+[
 	QGVAR(killConfirmChanceAI),"SLIDER",
 	[LSTRING(SettingName_KillConfirmChanceAI),LSTRING(SettingInfo_KillConfirmChanceAI)],
 	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Core)],

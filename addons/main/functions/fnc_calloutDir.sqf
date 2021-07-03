@@ -2,7 +2,7 @@
 
 params ["_unit"];
 
-if (isPlayer _unit && !GVAR(enablePlayers)) exitWith {};
+if (isPlayer _unit && !GVAR(enablePlayers) || {!GVAR(enableCallouts)}) exitWith {};
 
 _unit reveal cursorObject;
 private _target = cursorTarget;

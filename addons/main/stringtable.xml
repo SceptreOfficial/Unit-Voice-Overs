@@ -22,6 +22,12 @@
 		<Key ID="STR_UVO_Main_SettingInfo_EnablePlayers">
 			<English>Enable voice-overs for player controlled units</English>
 		</Key>
+		<Key ID="STR_UVO_Main_SettingName_EnableCallouts">
+			<English>Enable callouts</English>
+		</Key>
+		<Key ID="STR_UVO_Main_SettingInfo_EnableCallouts">
+			<English>Allow directional callouts from players</English>
+		</Key>
 		<Key ID="STR_UVO_Main_SettingName_KillConfirmChanceAI">
 			<English>AI kill confirm chance</English>
 		</Key>
