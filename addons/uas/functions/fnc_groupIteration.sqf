@@ -21,13 +21,13 @@ if (GVAR(enableRadio) && _group getVariable [QGVAR(intRadio),CBA_missionTime + 1
 			case 0 : {
 				private _leader = leader _group;
 
-				if (isPlayer _leader && GVAR(enableRadioPlayers) && alive _leader && behaviour _leader != "STEALTH") then {
+				if (isPlayer _leader && GVAR(enableRadioPlayers) || GVAR(enablePlayers) && alive _leader && behaviour _leader != "STEALTH") then {
 					[_leader,GET_SOUND(_leader,"radio")] call _fnc_playRadio;
 				};
 			};
 			// Random unit
 			case 1 : {
-				private _units = if (GVAR(enableRadioPlayers)) then {
+				private _units = if (GVAR(enableRadioPlayers) || GVAR(enablePlayers)) then {
 					(units _group) select {alive _x && behaviour _x != "STEALTH"}
 				} else {
 					(units _group) select {alive _x && behaviour _x != "STEALTH" && !isPlayer _x}
@@ -41,7 +41,7 @@ if (GVAR(enableRadio) && _group getVariable [QGVAR(intRadio),CBA_missionTime + 1
 			};
 			// Units with 'UAS_radioOperator' variable
 			case 2 : {
-				private _units = if (GVAR(enableRadioPlayers)) then {
+				private _units = if (GVAR(enableRadioPlayers) || GVAR(enablePlayers)) then {
 					(units _group) select {alive _x && _x getVariable ["UAS_radioOperator",false] && behaviour _x != "STEALTH"}
 				} else {
 					(units _group) select {alive _x && _x getVariable ["UAS_radioOperator",false] && behaviour _x != "STEALTH" && !isPlayer _x}
