@@ -9,16 +9,11 @@ if (
 
 // Only run if there are friendlies in 40 meter radius
 private _friendlies = ((_unit nearEntities [["CAManBase"],40]) select {
-	if (
-		alive _x && 
-		!(_x getVariable ["ACE_isUnconscious",false]) && 
-		!isNil {_x getVariable "UVO_voice"} && 
-		(side group _unit) getFriend (side group _x) >= 0.6
-	) then {
-		if (GVAR(enablePlayers)) then {true} else {
-			!isPlayer _x
-		};
-	} else {false};
+	alive _x && 
+	!(_x getVariable ["ACE_isUnconscious",false]) && 
+	!isNil {_x getVariable "UVO_voice"} && 
+	(side group _unit) getFriend (side group _x) >= 0.6 &&
+	{GVAR(enablePlayers) || !isPlayer _x}
 }) - [_unit];
 
 if (_friendlies isEqualTo []) exitWith {};

@@ -5,16 +5,12 @@ params ["_deadUnit","_deadUnitSide"];
 if (isNull _deadUnit) exitWith {};
 
 private _friendlies = (_deadUnit nearEntities ["CAManBase",40]) select {
-	if (
-		alive _x && !(_x getVariable ["ACE_isUnconscious",false]) && 
-		!isNil {_x getVariable "UVO_voice"} && 
-		_deadUnitSide getFriend (side group _x) >= 0.6 && 
-		_x getVariable ["UVO_allyDownAllow",true]
-	) then {
-		if (GVAR(enablePlayers)) then {true} else {
-			!isPlayer _x
-		};
-	} else {false};
+	alive _x && 
+	!(_x getVariable ["ACE_isUnconscious",false]) && 
+	!isNil {_x getVariable "UVO_voice"} && 
+	_deadUnitSide getFriend (side group _x) >= 0.6 && 
+	_x getVariable ["UVO_allyDownAllow",true] &&
+	{GVAR(enablePlayers) || !isPlayer _x}
 };
 
 if (_friendlies isEqualTo []) exitWith {};

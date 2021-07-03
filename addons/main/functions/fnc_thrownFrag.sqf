@@ -8,11 +8,11 @@
 	if (isNull _projectile) exitWith {};
 
 	private _enemies = (_projectile nearEntities ["CAManBase",12]) select {
-		if (alive _x && !(_x getVariable ["ACE_isUnconscious",false]) && !isNil {_x getVariable "UVO_voice"} && _throwerSide getFriend (side group _x) < 0.6) then {
-			if (GVAR(enablePlayers)) then {true} else {
-				!isPlayer _x
-			};
-		} else {false};
+		alive _x &&
+		!(_x getVariable ["ACE_isUnconscious",false]) &&
+		!isNil {_x getVariable "UVO_voice"} &&
+		_throwerSide getFriend (side group _x) < 0.6 &&
+		{GVAR(enablePlayers) || !isPlayer _x}
 	};
 
 	if (_enemies isEqualTo []) exitwith {};
