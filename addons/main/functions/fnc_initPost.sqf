@@ -26,7 +26,7 @@ if (!isNil QGVAR(customVoices)) then {
 // Default arma voices
 _unit setVariable ["UVO_speaker",speaker _unit,true];
 
-if !(missionNamespace getVariable [QGVAR(sentences) + _voice,true]) then {
+if !(missionNamespace getVariable [QGVAR(sentences) + str side group _unit,true]) then {
 	private _jipID = [QGVAR(setSpeaker),[_unit,"NoVoice"]] call CBA_fnc_globalEventJIP;
 	[_jipID,_unit] call CBA_fnc_removeGlobalEventJIP;
 };
