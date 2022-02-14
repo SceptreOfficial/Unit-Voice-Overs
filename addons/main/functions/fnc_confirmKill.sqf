@@ -13,7 +13,10 @@ private _distance = _unit distance _victim;
 
 	private _isStealth = behaviour _unit == "STEALTH";
 
-	if (_isStealth && !GVAR(killConfirmStealth)) exitWith {};
+	if (
+		!(_unit getVariable ["UVO_allowKillConfirm",true]) ||
+		(_isStealth && !GVAR(killConfirmStealth))
+	) exitWith {};
 
 	if (_distance > 200 && !_isStealth) then {
 		[_unit,"targDownHi"] call FUNC(speak);
