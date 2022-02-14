@@ -16,12 +16,18 @@ if (!isNil QGVAR(customVoices)) then {
 	private _index = GVAR(customVoices) findIf {_x # 0 == _faction};
 
 	if (_index != -1) then {
-		_voice = selectRandom (GVAR(customVoices) # _index # 1);
+		private _voices = (GVAR(customVoices) # _index # 1) select {missionNamespace getVariable [QGVAR(UVO) + _x,true]};
+
+		if (_voices isEqualTo []) then {
+			_voice = ""; // Don't revert to default
+		} else {
+			_voice = selectRandom _voices;
+		};
 	};	
 };
 
 // Add UVO
-if (missionNamespace getVariable [QGVAR(UVO) + _voice,true]) then {
+if (_voice isNotEqualTo "" && missionNamespace getVariable [QGVAR(UVO) + _voice,true]) then {
 	[_unit,_voice] call FUNC(add);
 };
 
