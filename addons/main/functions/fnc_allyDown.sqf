@@ -24,6 +24,6 @@ if (_friendlies isEqualTo []) exitWith {};
 
 [{
 	{_x setVariable ["UVO_allyDownAllow",nil]} forEach _this;
-},_friendlies,1] call CBA_fnc_waitAndExecute;
+},_friendlies,2] call CBA_fnc_waitAndExecute;
 
 [selectRandom _friendlies,"allyDown"] call FUNC(speak);
