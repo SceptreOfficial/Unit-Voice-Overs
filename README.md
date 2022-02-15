@@ -9,7 +9,7 @@
 
 <p align="center">
 	<a href="https://github.com/SceptreOfficial/Unit-Voice-Overs/releases/latest">
-		<img src="https://img.shields.io/badge/Version-2.0.3-blue?style=flat-square" alt="Version">
+		<img src="https://img.shields.io/badge/Version-2.0.4-blue?style=flat-square" alt="Version">
 	</a>
 	<a href="https://github.com/SceptreOfficial/Unit-Voice-Overs/issues">
 		<img src="https://img.shields.io/github/issues-raw/SceptreOfficial/Unit-Voice-Overs?style=flat-square&label=Issues" alt="Issues">
