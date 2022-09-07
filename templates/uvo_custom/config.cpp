@@ -1,6 +1,6 @@
 class CfgPatches {
 	class uvo_custom {
-		name = uvo_custom;
+		name = "uvo_custom";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.9;
