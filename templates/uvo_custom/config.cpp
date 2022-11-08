@@ -20,10 +20,8 @@ class Extended_PreInit_EventHandlers {
 	};
 };
 
-class Extended_PostInit_EventHandlers
-{
-	class uvo_custom
-	{
-		init="call compileScript ['\uvo_custom\throwables.sqf']";
+class Extended_PostInit_EventHandlers {
+	class uvo_custom {
+		init = "call compileScript ['\uvo_custom\throwables.sqf']";
 	};
 };
