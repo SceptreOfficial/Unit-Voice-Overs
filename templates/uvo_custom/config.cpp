@@ -19,3 +19,9 @@ class Extended_PreInit_EventHandlers {
 		init = "[configFile >> 'UVO_voice_custom'] call UVO_fnc_register";
 	};
 };
+
+class Extended_PostInit_EventHandlers {
+	class uvo_custom {
+		init = "call compileScript ['\uvo_custom\throwables.sqf']";
+	};
+};
