@@ -60,8 +60,7 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["CSA38_rg21",1],
 ["CSA38_rg34",1],
 ["CSA38_rg38",1],
-["CSA38_shg24",1],Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-
+["CSA38_shg24",1],
 ["CSA38_shg24t",1],
 ["EAW_Chinese_Grenade_Mag",1],
 ["EAW_Type91_Mag",1],
