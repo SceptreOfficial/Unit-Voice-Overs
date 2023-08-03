@@ -60,7 +60,8 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["CSA38_rg21",1],
 ["CSA38_rg34",1],
 ["CSA38_rg38",1],
-["CSA38_shg24",1],
+["CSA38_shg24",1],Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+
 ["CSA38_shg24t",1],
 ["EAW_Chinese_Grenade_Mag",1],
 ["EAW_Type91_Mag",1],
@@ -278,7 +279,7 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["rhs_mine_tm62m_mag",5],
 ["rhs_ec75_mag",5],
 ["rhs_ec200_sand_mag",5],
-[rhs_ec200_mag",5],
+["rhs_ec200_mag",5],
 ["rhs_ec400_sand_mag",5],
 ["rhs_ec400_mag",5],
 ["rhs_ec75_sand_mag",5],
