@@ -152,7 +152,6 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["40xtra_nade_explo_mk3a2",1],
 ["OPTRE_M9_Frag",1],
 
-
 	// 2: smoke(include tear gas)
 ["rhs_mag_an_m8hc",2],
 ["rhssaf_mag_br_m84",2],
@@ -209,7 +208,6 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["OPTRE_M2_Smoke",2],
 ["OPTRE_M2_Smoke_Yellow",2],
 
-
 	// 3: flash(include EMP)
 ["rhs_mag_plamyam",3],	
 ["rhs_mag_fakels",3],
@@ -226,7 +224,6 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["QBGrenade",3],
 ["OPTRE_FC_PlasmaGrenade",3],
 
-
 	// 4: incendiary(include WP,napalm)
 ["ACE_M14",4],
 ["rhs_mag_an_m14_th3",4],
@@ -235,7 +232,6 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["uns_m34gren",4],
 ["uns_m14gren",4],
 ["uns_m308gren",4],	
-
 
 	// 5: explosive(include mine)
 ["rhsgref_mag_rkg3em",5],
@@ -330,5 +326,4 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["UNSCMine_Range_Mag",5],
 ["C12_Remote_Mag",5],
 ["C7_Remote_Mag",5]
-
 ];
