@@ -22,3 +22,8 @@ if (currentweapon _unit != secondaryweapon _unit) then {
 	if (isPlayer _unit && !GVAR(enablePlayers)) exitWith {};
 	[_unit,"ammoLow"] call FUNC(speak);
 };
+
+if (!alive _unit || isNil {_unit getVariable "UVO_voice"} ||
+	!isPlayer _unit && {GVAR(reloadChanceAI) <= random 1} ||
+	isPlayer _unit && {!GVAR(enablePlayers) || GVAR(reloadChancePlayer) <= random 1}
+) exitWith {};
