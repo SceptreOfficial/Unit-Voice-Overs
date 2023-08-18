@@ -52,6 +52,26 @@
 ] call CBA_fnc_addSetting;
 
 [
+	QGVAR(reloadChanceAI),"SLIDER",
+	[LSTRING(SettingName_reloadChanceAI),LSTRING(SettingInfo_reloadChanceAI)],
+	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Core)],
+	[0,1,1,0,true],
+	true,
+	{},
+	false
+] call CBA_fnc_addSetting;
+
+[
+	QGVAR(reloadChancePlayer),"SLIDER",
+	[LSTRING(SettingName_reloadChancePlayer),LSTRING(SettingInfo_reloadChancePlayer)],
+	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Core)],
+	[0,1,1,0,true],
+	true,
+	{},
+	false
+] call CBA_fnc_addSetting;
+
+[
 	QGVAR(hearingDistance),"SLIDER",
 	[LSTRING(SettingName_HearingDistance),LSTRING(SettingInfo_HearingDistance)],
 	[LSTRING(UnitVoiceOvers),LSTRING(SettingCategory_Core)],
