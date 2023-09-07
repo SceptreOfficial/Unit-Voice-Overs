@@ -151,7 +151,6 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["40xtra_nade_explo_impact",1],
 ["40xtra_nade_explo_mk3a2",1],
 ["OPTRE_M9_Frag",1],
-["BWA3_DM51A1",1],
 
 	// 2: smoke(include tear gas)
 ["rhs_mag_an_m8hc",2],
