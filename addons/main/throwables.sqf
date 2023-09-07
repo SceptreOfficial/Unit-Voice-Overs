@@ -151,6 +151,7 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["40xtra_nade_explo_impact",1],
 ["40xtra_nade_explo_mk3a2",1],
 ["OPTRE_M9_Frag",1],
+["BWA3_DM51A1",1],
 
 	// 2: smoke(include tear gas)
 ["rhs_mag_an_m8hc",2],
@@ -207,6 +208,13 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["OPTRE_M2_Smoke_Red",2],
 ["OPTRE_M2_Smoke",2],
 ["OPTRE_M2_Smoke_Yellow",2],
+["BWA3_DM25",2],
+["BWA3_DM32_Orange",2],
+["BWA3_DM32_Yellow",2],
+["BWA3_DM32_Green",2],
+["BWA3_DM32_Red",2],
+["BWA3_DM32_Purple",2],
+["BWA3_DM32_Blue",2],
 
 	// 3: flash(include EMP)
 ["rhs_mag_plamyam",3],	
@@ -325,5 +333,9 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["M168_Remote_Mag",5],
 ["UNSCMine_Range_Mag",5],
 ["C12_Remote_Mag",5],
+["BWA3_DM31AT",5],
+["BWA3_ModuleMine_DM31AT",5],
+["BWA3_AT2",5],
+["BWA3_ModuleMine_AT2",5],
 ["C7_Remote_Mag",5]
 ];
