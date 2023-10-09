@@ -38,3 +38,5 @@ if !(missionNamespace getVariable [QGVAR(sentences) + str side group _unit,true]
 	private _jipID = [QGVAR(setSpeaker),[_unit,"NoVoice"]] call CBA_fnc_globalEventJIP;
 	[_jipID,_unit] call CBA_fnc_removeGlobalEventJIP;
 };
+
+[QGVAR(initPostDone),[_unit,_voice]] call CBA_fnc_localEvent;
