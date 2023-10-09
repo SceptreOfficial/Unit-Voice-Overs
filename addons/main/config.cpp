@@ -22,7 +22,7 @@ class CfgPatches {
 
 	// Dependency fix
 	class UVO {
-		name = COMPONENT;
+		name = QUOTE(COMPONENT);
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;

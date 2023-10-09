@@ -2,7 +2,7 @@
 
 class CfgPatches {
 	class ADDON {
-		name = COMPONENT;
+		name = QUOTE(COMPONENT);
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;
@@ -14,7 +14,7 @@ class CfgPatches {
 
 	// Dependency fix
 	class UAS {
-		name = COMPONENT;
+		name = QUOTE(COMPONENT);
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;

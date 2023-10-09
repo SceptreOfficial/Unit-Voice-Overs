@@ -1,0 +1,21 @@
+name = "Unit Voice-Overs"
+mainprefix = "z"
+prefix = "uvo"
+author = "Simplex Team"
+
+[files]
+include = [
+    "mod.cpp",
+    "assets/uvo.paa",
+    "LICENSE",
+    "authors.txt"
+]
+
+[version]
+major = 2
+minor = 0
+patch = 7
+git_hash = 0
+
+[asc]
+enabled = true

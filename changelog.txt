@@ -1,0 +1,12 @@
+v2.0.7
+- Added more grenade compatibility (thanks acknowledge14)
+- Added CBA events for adding and removing voices
+- Fixed custom voice setting names
+
+v2.0.4
+- Added kill confirmation toggle variable for units "UVO_allowKillConfirm"
+- Decreased bullet suppression triggering chances
+- Increased baseline death shout volume
+- Fixed reload sound triggering if UVO is disabled for players (Thanks Shukari)
+- Fixed death shouts being cancelled out from normal speech
+- Fixed voice selection/randomization defaulting

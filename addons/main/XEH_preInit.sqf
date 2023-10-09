@@ -2,7 +2,7 @@
 ADDON = false;
 #include "XEH_PREP.hpp"
 #include "throwables.sqf"
-#include "cba_settings.sqf";
+#include "cba_settings.sqf"
 
 if (is3DEN) exitWith {};
 
