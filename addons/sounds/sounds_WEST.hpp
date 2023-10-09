@@ -247,7 +247,6 @@ SOUND_CLASS(GVAR(allyDown23_WEST),west\killed\allyDown23.ogg);
 SOUND_CLASS(GVAR(allyDown24_WEST),west\killed\allyDown24.ogg);
 SOUND_CLASS(GVAR(allyDown25_WEST),west\killed\allyDown25.ogg);
 SOUND_CLASS(GVAR(allyDown26_WEST),west\killed\allyDown26.ogg);
-SOUND_CLASS(GVAR(allyDown26_WEST),west\killed\allyDown26.ogg);
 SOUND_CLASS(GVAR(allyDown27_WEST),west\killed\allyDown27.ogg);
 SOUND_CLASS(GVAR(allyDown28_WEST),west\killed\allyDown28.ogg);
 SOUND_CLASS(GVAR(allyDown29_WEST),west\killed\allyDown29.ogg);
