@@ -23,7 +23,7 @@ if (!isNil QGVAR(customVoices)) then {
 		} else {
 			_voice = selectRandom _voices;
 		};
-	};	
+	};
 };
 
 // Add UVO
