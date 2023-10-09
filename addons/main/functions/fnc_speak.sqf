@@ -1,11 +1,13 @@
 #include "script_component.hpp"
 
-if (GVAR(debug)) then {diag_log format ["uvo_main_fnc_speak: %1",_this]};
+if (GVAR(debug)) then {systemChat format ["uvo_main_fnc_speak: %1",_this]};
 
 params [["_unit",objNull,[objNull]],["_event","",[""]],["_hearingDistance",GVAR(hearingDistance),[0]]];
 
 if (_event == "death") exitWith {
 	private _sound = selectRandom ((missionNamespace getVariable ["UVO_voice_" + (_unit getVariable "UVO_voice"),objNull]) getVariable [_event,[""]]);
+
+	if (GVAR(debug)) then {systemChat format ["uvo_main_fnc_speak: Selected sound: ""%1""",_sound]};
 
 	if (_sound isEqualTo "") exitWith {};
 
@@ -22,6 +24,8 @@ if (
 ) exitWith {};
 
 private _sound = selectRandom ((missionNamespace getVariable ["UVO_voice_" + (_unit getVariable "UVO_voice"),objNull]) getVariable [_event,[""]]);
+
+if (GVAR(debug)) then {systemChat format ["uvo_main_fnc_speak: Selected sound: ""%1""",_sound]};
 
 if (_sound isEqualTo "") exitWith {};
 
