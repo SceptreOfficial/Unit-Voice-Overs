@@ -169,7 +169,6 @@ GVAR(throwablesHash) = createHashMapFromArray [
 ["rhs_mag_m18_purple",2],
 ["rhs_mag_m18_red",2],
 ["rhs_mag_m18_yellow",2],
-["rhs_mag_m67",2],
 ["rhs_mag_m69",2],
 ["rhs_mag_m7a3_cs",2],
 ["digi_m7a3",2],
