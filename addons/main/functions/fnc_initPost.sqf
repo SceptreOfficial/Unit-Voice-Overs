@@ -3,6 +3,7 @@
 params ["_unit"];
 
 if (isNull _unit || !local _unit) exitWith {};
+if (getText (configOf _unit >> "simulation") == "UAVPilot") exitWith {};
 
 private _voice = switch true do {
 	case (_unit isKindOf "SoldierEB") : {"EAST"};
