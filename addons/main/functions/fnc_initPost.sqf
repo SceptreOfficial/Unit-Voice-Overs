@@ -3,6 +3,7 @@
 params ["_unit"];
 
 if (isNull _unit || !local _unit) exitWith {};
+if ("InvisibleUniform_lxws" in typeOf _unit) exitWith {};
 
 private _voice = switch true do {
 	case (_unit isKindOf "SoldierEB") : {"EAST"};
